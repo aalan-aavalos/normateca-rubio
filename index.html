@@ -3,23 +3,135 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Normateca digital - Seguridad Informatico</title>
+    <title>Normateca Digital - Seguridad Informática</title>
 
     <!-- Icono -->
     <link rel="icon" href="/content/img/padoru.gif" type="image/x-icon" />
 
-    <!-- Estilos de Boostrap -->
+    <!-- Estilos de Bootstrap -->
     <link rel="stylesheet" href="content/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Estilos personalizados -->
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+
+      .hero {
+        background-color: #00254d;
+        color: white;
+        padding: 3rem 1rem;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .card {
+        margin-bottom: 1.5rem;
+        border: none;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.02);
+      }
+
+      .card-body {
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 8px;
+      }
+
+      .section-heading {
+        font-weight: bold;
+        color: #343a40;
+        text-align: center;
+        margin: 3rem 0;
+      }
+
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Script de Boostrap -->
+    <!-- Script de Bootstrap -->
     <script src="content/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Barra de navegación -->
     <div id="navbar-placeholder"></div>
     <script src="/content/pages/components/navbar/navbar.js"></script>
 
-    <div style="padding: 1rem"><h1>Hola mundo</h1></div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Bienvenido a Normateca Digital</h1>
+      <p>Tu fuente confiable para explorar normativas y buenas prácticas de seguridad informática.</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <h2 class="section-heading">Explora nuestras secciones</h2>
+      <div class="row">
+        <!-- Aspectos Éticos -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Aspectos Éticos</h3>
+              <p class="card-text">
+                Conoce las responsabilidades éticas al gestionar la información y cómo proteger los datos personales.
+              </p>
+              <a href="C:\Users\mikes\Documents\Rubio\Instrumento de evaluacion I\normateca-rubio\content\pages\ethical-aspects.html" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Normativas -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Normativas</h3>
+              <p class="card-text">
+                Explora las leyes y regulaciones clave que garantizan la seguridad y manejo responsable de la información.
+              </p>
+              <a href="C:\Users\mikes\Documents\Rubio\Instrumento de evaluacion I\normateca-rubio\content\pages\rules.html" class="btn btn-primary">Ver normativas</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estándares -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Estándares</h3>
+              <p class="card-text">
+                Descubre los estándares internacionales que rigen la gestión de la seguridad informática y ciberseguridad.
+              </p>
+              <a href="C:\Users\mikes\Documents\Rubio\Instrumento de evaluacion I\normateca-rubio\content\pages\standards.html" class="btn btn-primary">Conocer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Normateca Digital - Seguridad Informática</p>
+      <p>
+        <a href="/content/pages/privacy-notice.html" class="text-white">Aviso de privacidad</a>
+      </p>
+    </footer>
   </body>
 </html>
