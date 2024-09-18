@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -6,26 +6,27 @@
     <title>Normativas</title>
 
     <!-- Icono -->
-    <link rel="icon" href="/content/img/padoru.gif" type="image/x-icon" />
+    <link rel="icon" href="../img/padoru.gif" type="image/x-icon" />
 
     <!-- Estilos de Bootstrap -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
 
     <!-- Estilos personalizados -->
     <style>
-      html, body {
+      html,
+      body {
         height: 100%;
         margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
 
       body {
-      background: #00254d;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+        background: #00254d;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    h1 {
-      color: #f7fbff;
+      h1 {
+        color: #f7fbff;
         font-weight: bold;
         margin-bottom: 2rem;
         text-align: center;
@@ -82,75 +83,188 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Barra de navegación -->
-    <div id="navbar-placeholder"></div>
-    <script src="components/navbar/navbar.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">Normateca digital</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./ethical-aspects.html"
+                >Aspectos eticos</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Normativas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./rules.html#data-protection"
+                    >Ley general de protección de datos personales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./rules.html#industrial-property"
+                    >Ley de propiedad industrial</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./rules.html#copyright"
+                    >Ley federal de derechos de autor</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./rules.html#criminal-code"
+                    >Codigo penal federal</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./standards.html"
+                >Estandares</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container py-5">
       <h1>Normativas</h1>
 
       <!-- Protección de datos -->
-      <div class="card mb-4 shadow-sm">
-        <div class="card-body">
-          <h2>Ley General de Protección de Datos Personales</h2>
-          <p>
-            <strong>¿Qué es?</strong> La Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados establece los principios y bases para proteger los datos personales en México, garantizando su correcto uso y protección.
-          </p>
-          <p>
-            <strong>¿Para qué sirve?</strong> Esta ley regula el tratamiento de los datos personales por parte de entidades públicas, asegurando su uso responsable y protegiendo la privacidad de los ciudadanos.
-          </p>
-          <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf" target="_blank">Descargar Ley General de Protección de Datos Personales</a>
+      <section id="data-protection">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2>Ley General de Protección de Datos Personales</h2>
+            <p>
+              <strong>¿Qué es?</strong> La Ley General de Protección de Datos
+              Personales en Posesión de Sujetos Obligados establece los
+              principios y bases para proteger los datos personales en México,
+              garantizando su correcto uso y protección.
+            </p>
+            <p>
+              <strong>¿Para qué sirve?</strong> Esta ley regula el tratamiento
+              de los datos personales por parte de entidades públicas,
+              asegurando su uso responsable y protegiendo la privacidad de los
+              ciudadanos.
+            </p>
+            <a
+              href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf"
+              target="_blank"
+              >Descargar Ley General de Protección de Datos Personales</a
+            >
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- Propiedad industrial -->
-      <div class="card mb-4 shadow-sm">
-        <div class="card-body">
-          <h2>Ley de Propiedad Industrial</h2>
-          <p>
-            <strong>¿Qué es?</strong> La Ley de Propiedad Industrial protege los derechos derivados de la creación e innovación en el ámbito industrial, como patentes, marcas y diseños industriales.
-          </p>
-          <p>
-            <strong>¿Para qué sirve?</strong> Esta ley fomenta la innovación y garantiza la exclusividad sobre el uso de creaciones industriales, promoviendo la competencia justa y protegiendo a los inventores.
-          </p>
-          <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LPI.pdf" target="_blank">Descargar Ley de Propiedad Industrial</a>
+      <section id="industrial-property">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2>Ley de Propiedad Industrial</h2>
+            <p>
+              <strong>¿Qué es?</strong> La Ley de Propiedad Industrial protege
+              los derechos derivados de la creación e innovación en el ámbito
+              industrial, como patentes, marcas y diseños industriales.
+            </p>
+            <p>
+              <strong>¿Para qué sirve?</strong> Esta ley fomenta la innovación y
+              garantiza la exclusividad sobre el uso de creaciones industriales,
+              promoviendo la competencia justa y protegiendo a los inventores.
+            </p>
+            <a
+              href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LPI.pdf"
+              target="_blank"
+              >Descargar Ley de Propiedad Industrial</a
+            >
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- Derechos de autor -->
-      <div class="card mb-4 shadow-sm">
-        <div class="card-body">
-          <h2>Ley Federal de Derechos de Autor</h2>
-          <p>
-            <strong>¿Qué es?</strong> La Ley Federal de Derechos de Autor tiene como objetivo proteger las obras de creadores en ámbitos literarios, artísticos, musicales y audiovisuales, asegurando el reconocimiento y remuneración de los autores.
-          </p>
-          <p>
-            <strong>¿Para qué sirve?</strong> Sirve para garantizar los derechos patrimoniales y morales de los creadores, brindándoles protección legal sobre sus obras y el control sobre su uso y distribución.
-          </p>
-          <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/122_280121.pdf" target="_blank">Descargar Ley Federal de Derechos de Autor</a>
+      <section id="copyright">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2>Ley Federal de Derechos de Autor</h2>
+            <p>
+              <strong>¿Qué es?</strong> La Ley Federal de Derechos de Autor
+              tiene como objetivo proteger las obras de creadores en ámbitos
+              literarios, artísticos, musicales y audiovisuales, asegurando el
+              reconocimiento y remuneración de los autores.
+            </p>
+            <p>
+              <strong>¿Para qué sirve?</strong> Sirve para garantizar los
+              derechos patrimoniales y morales de los creadores, brindándoles
+              protección legal sobre sus obras y el control sobre su uso y
+              distribución.
+            </p>
+            <a
+              href="https://www.diputados.gob.mx/LeyesBiblio/pdf/122_280121.pdf"
+              target="_blank"
+              >Descargar Ley Federal de Derechos de Autor</a
+            >
+          </div>
         </div>
-      </div>
+      </section>
 
       <!-- Código penal -->
+      <section id="criminal-code">
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
           <h2>Código Penal Federal</h2>
           <p>
-            <strong>¿Qué es?</strong> El Código Penal Federal establece las normas y sanciones aplicables en el territorio nacional por la comisión de delitos, protegiendo el orden social y los derechos de las personas.
+            <strong>¿Qué es?</strong> El Código Penal Federal establece las
+            normas y sanciones aplicables en el territorio nacional por la
+            comisión de delitos, protegiendo el orden social y los derechos de
+            las personas.
           </p>
           <p>
-            <strong>¿Para qué sirve?</strong> Define los delitos y las sanciones correspondientes, actuando como base para el sistema de justicia penal en México y asegurando la protección de la sociedad ante conductas ilícitas.
+            <strong>¿Para qué sirve?</strong> Define los delitos y las sanciones
+            correspondientes, actuando como base para el sistema de justicia
+            penal en México y asegurando la protección de la sociedad ante
+            conductas ilícitas.
           </p>
-          <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/9_310123.pdf" target="_blank">Descargar Código Penal Federal</a>
+          <a
+            href="https://www.diputados.gob.mx/LeyesBiblio/pdf/9_310123.pdf"
+            target="_blank"
+            >Descargar Código Penal Federal</a
+          >
         </div>
       </div>
     </div>
+  </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <div class="container">
         <p class="mb-1 text-center">&copy; 2024 Seguridad Informática</p>
         <p>
-          <a href="../pages/components/privacy-notice/privacy-notice.html" class="text-white d-block text-center" target="_blank">Aviso de privacidad</a>
+          <a
+            href="./privacy-notice.html"
+            class="text-white d-block text-center"
+            target="_blank"
+            >Aviso de privacidad</a
+          >
         </p>
       </div>
     </footer>

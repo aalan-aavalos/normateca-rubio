@@ -1,201 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estandares</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estandares</title>
+    <!-- Icono -->
+    <link rel="icon" href="/content/img/padoru.gif" type="image/x-icon" />
 
-  <!-- Icono -->
-  <link rel="icon" href="/content/img/padoru.gif" type="image/x-icon" />
+    <!-- Estilos de Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
 
-  <!-- Estilos de Bootstrap -->
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <!-- Estilos personalizados -->
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
 
-  <!-- Estilos personalizados -->
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+      body {
+        background: #00254d;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    body {
-      background: #00254d;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+      h1 {
+        color: #f7fbff;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
 
-    h1 {
-      color: #f7fbff;
-      font-weight: bold;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
+      h2 {
+        color: #1c3b57;
+        font-size: 1.5rem;
+      }
 
-    h2 {
-      color: #1c3b57;
-      font-size: 1.5rem;
-    }
+      p {
+        text-align: justify;
+        color: #6c757d;
+      }
 
-    p {
-      text-align: justify;
-      color: #6c757d;
-    }
+      a {
+        color: #007bff;
+      }
 
-    a {
-      color: #007bff;
-    }
+      a:hover {
+        text-decoration: underline;
+      }
 
-    a:hover {
-      text-decoration: underline;
-    }
+      .card {
+        border: none;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-    .card {
-      border: none;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+      .card-body {
+        padding: 2rem;
+        background-color: #d9f1ff;
+        border-radius: 8px;
+      }
 
-    .card-body {
-      padding: 2rem;
-      background-color: #d9f1ff;
-      border-radius: 8px;
-    }
+      footer {
+        background-color: #00254d;
+        color: white;
+      }
 
-    footer {
-      background-color: #00254d;
-      color: white;
-    }
+      footer a {
+        color: #f8f9fa;
+        text-decoration: none;
+      }
 
-    footer a {
-      color: #f8f9fa;
-      text-decoration: none;
-    }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
 
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Script de Bootstrap -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<body>
-  <!-- Script de Bootstrap -->
-  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">Normateca digital</a>
 
-  <!-- Barra de navegación -->
-  <div id="navbar-placeholder"></div>
-  <script src="components/navbar/navbar.js"></script>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./ethical-aspects.html"
+                >Aspectos eticos</a
+              >
+            </li>
 
-  <div class="container py-5">
-    <h1>Estandares de Manejo de la Información</h1>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Normativas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./rules.html#data-protection"
+                    >Ley general de protección de datos personales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./rules.html#industrial-property"
+                    >Ley de propiedad industrial</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./rules.html#copyright"
+                    >Ley federal de derechos de autor</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./rules.html#criminal-code"
+                    >Codigo penal federal</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-    <!-- Sección ISO 27001 -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h2>ISO 27001</h2>
-        <p>
-          <strong>¿Qué es?</strong> ISO 27001 es un estándar internacional emitido por la Organización Internacional de
-          Normalización (ISO) que establece los requisitos para crear, mantener y mejorar un Sistema de Gestión de
-          Seguridad de la Información (SGSI). Se enfoca en la protección de la confidencialidad, integridad y
-          disponibilidad de la información en una organización.
-        </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> Este estándar ayuda a las organizaciones a identificar riesgos relacionados
-          con la información y a implementar controles adecuados para mitigar dichos riesgos. El cumplimiento de ISO
-          27001 proporciona confianza a clientes y partes interesadas sobre la seguridad de la información manejada.
-        </p>
-        <a href="https://www.iso.org/es/contents/data/standard/08/28/82875.html" target="_blank">Más información sobre
-          ISO 27001</a>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./standards.html"
+                >Estandares</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <h1>Estandares de Manejo de la Información</h1>
+
+      <!-- Sección ISO 27001 -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2>ISO 27001</h2>
+          <p>
+            <strong>¿Qué es?</strong> ISO 27001 es un estándar internacional
+            emitido por la Organización Internacional de Normalización (ISO) que
+            establece los requisitos para crear, mantener y mejorar un Sistema
+            de Gestión de Seguridad de la Información (SGSI). Se enfoca en la
+            protección de la confidencialidad, integridad y disponibilidad de la
+            información en una organización.
+          </p>
+          <p>
+            <strong>¿Para qué sirve?</strong> Este estándar ayuda a las
+            organizaciones a identificar riesgos relacionados con la información
+            y a implementar controles adecuados para mitigar dichos riesgos. El
+            cumplimiento de ISO 27001 proporciona confianza a clientes y partes
+            interesadas sobre la seguridad de la información manejada.
+          </p>
+          <a
+            href="https://www.iso.org/es/contents/data/standard/08/28/82875.html"
+            target="_blank"
+            >Más información sobre ISO 27001</a
+          >
+        </div>
+      </div>
+
+      <!-- Sección ISO 17799 -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2>ISO 17799 (ISO/IEC 27002)</h2>
+          <p>
+            <strong>¿Qué es?</strong> ISO 17799, renombrado como ISO/IEC 27002,
+            es una guía de buenas prácticas que ofrece recomendaciones sobre los
+            controles de seguridad de la información. No es un estándar
+            certificable, sino un complemento a ISO 27001 que ayuda a las
+            organizaciones a seleccionar los controles adecuados.
+          </p>
+          <p>
+            <strong>¿Para qué sirve?</strong> Sirve para apoyar la
+            implementación de los controles de seguridad que ISO 27001 requiere.
+            Las empresas utilizan ISO 17799 para gestionar de manera efectiva
+            las políticas de seguridad y protección de la información frente a
+            amenazas internas y externas.
+          </p>
+          <a
+            href="https://www.iso.org/es/contents/data/standard/07/56/75652.html"
+            target="_blank"
+            >Más información sobre ISO 17799</a
+          >
+        </div>
+      </div>
+
+      <!-- Sección COBIT -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2>COBIT</h2>
+          <p>
+            <strong>¿Qué es?</strong> COBIT (Control Objectives for Information
+            and Related Technologies) es un marco desarrollado por ISACA que
+            permite a las organizaciones garantizar la gobernanza y gestión
+            efectiva de la tecnología de la información (TI). COBIT cubre toda
+            la empresa y asegura que la TI esté alineada con los objetivos
+            estratégicos de negocio.
+          </p>
+          <p>
+            <strong>¿Para qué sirve?</strong> Proporciona una serie de buenas
+            prácticas que ayudan a maximizar el valor de las inversiones en TI,
+            gestionar riesgos, asegurar el cumplimiento normativo y mejorar la
+            eficiencia de la gestión de TI. Es particularmente útil para
+            auditores, gerentes y directores de TI.
+          </p>
+          <a href="https://www.isaca.org/resources/cobit" target="_blank"
+            >Más información sobre COBIT</a
+          >
+        </div>
+      </div>
+
+      <!-- Sección NIST -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2>NIST</h2>
+          <p>
+            <strong>¿Qué es?</strong> NIST (National Institute of Standards and
+            Technology) es un marco de referencia estadounidense que proporciona
+            guías y estándares de seguridad cibernética para proteger la
+            infraestructura crítica. El "NIST Cybersecurity Framework" es
+            ampliamente utilizado para gestionar riesgos de ciberseguridad en
+            organizaciones públicas y privadas.
+          </p>
+          <p>
+            <strong>¿Para qué sirve?</strong> Sirve como una herramienta para
+            gestionar los riesgos de seguridad informática de manera
+            estructurada y eficaz. Es reconocido internacionalmente y se utiliza
+            para mejorar las prácticas de seguridad en sectores como el
+            gobierno, salud, energía y finanzas.
+          </p>
+          <a href="https://www.nist.gov/cyberframework" target="_blank"
+            >Más información sobre NIST</a
+          >
+        </div>
+      </div>
+
+      <!-- Sección ITIL -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h2>ITIL</h2>
+          <p>
+            <strong>¿Qué es?</strong> ITIL (Information Technology
+            Infrastructure Library) es un marco de referencia que proporciona un
+            conjunto de prácticas para la gestión de servicios de TI, con el fin
+            de alinear los servicios tecnológicos con las necesidades del
+            negocio.
+          </p>
+          <p>
+            <strong>¿Para qué sirve?</strong> Ayuda a las organizaciones a
+            mejorar la calidad de sus servicios de TI, optimizar recursos,
+            reducir costos y gestionar los riesgos asociados con la tecnología.
+            ITIL es ampliamente utilizado por empresas de todo el mundo para
+            mejorar la eficiencia operativa y la satisfacción del cliente.
+          </p>
+          <a
+            href="https://www.axelos.com/best-practice-solutions/itil"
+            target="_blank"
+            >Más información sobre ITIL</a
+          >
+        </div>
       </div>
     </div>
 
-    <!-- Sección ISO 17799 -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h2>ISO 17799 (ISO/IEC 27002)</h2>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-1 text-center">&copy; 2024 Seguridad Informática</p>
         <p>
-          <strong>¿Qué es?</strong> ISO 17799, renombrado como ISO/IEC 27002, es una guía de buenas prácticas que ofrece
-          recomendaciones sobre los controles de seguridad de la información. No es un estándar certificable, sino un
-          complemento a ISO 27001 que ayuda a las organizaciones a seleccionar los controles adecuados.
+          <a
+            href="./privacy-notice.html"
+            class="text-white d-block text-center"
+            target="_blank"
+            >Aviso de privacidad</a
+          >
         </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> Sirve para apoyar la implementación de los controles de seguridad que ISO
-          27001 requiere. Las empresas utilizan ISO 17799 para gestionar de manera efectiva las políticas de seguridad y
-          protección de la información frente a amenazas internas y externas.
-        </p>
-        <a href="https://www.iso.org/es/contents/data/standard/07/56/75652.html" target="_blank">Más información sobre
-          ISO 17799</a>
       </div>
-    </div>
-
-    <!-- Sección COBIT -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h2>COBIT</h2>
-        <p>
-          <strong>¿Qué es?</strong> COBIT (Control Objectives for Information and Related Technologies) es un marco
-          desarrollado por ISACA que permite a las organizaciones garantizar la gobernanza y gestión efectiva de la
-          tecnología de la información (TI). COBIT cubre toda la empresa y asegura que la TI esté alineada con los
-          objetivos estratégicos de negocio.
-        </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> Proporciona una serie de buenas prácticas que ayudan a maximizar el valor de
-          las inversiones en TI, gestionar riesgos, asegurar el cumplimiento normativo y mejorar la eficiencia de la
-          gestión de TI. Es particularmente útil para auditores, gerentes y directores de TI.
-        </p>
-        <a href="https://www.isaca.org/resources/cobit" target="_blank">Más información sobre COBIT</a>
-      </div>
-    </div>
-
-    <!-- Sección NIST -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h2>NIST</h2>
-        <p>
-          <strong>¿Qué es?</strong> NIST (National Institute of Standards and Technology) es un marco de referencia
-          estadounidense que proporciona guías y estándares de seguridad cibernética para proteger la infraestructura
-          crítica. El "NIST Cybersecurity Framework" es ampliamente utilizado para gestionar riesgos de ciberseguridad en
-          organizaciones públicas y privadas.
-        </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> Sirve como una herramienta para gestionar los riesgos de seguridad informática
-          de manera estructurada y eficaz. Es reconocido internacionalmente y se utiliza para mejorar las prácticas de
-          seguridad en sectores como el gobierno, salud, energía y finanzas.
-        </p>
-        <a href="https://www.nist.gov/cyberframework" target="_blank">Más información sobre NIST</a>
-      </div>
-    </div>
-
-    <!-- Sección ITIL -->
-    <div class="card mb-4 shadow-sm">
-      <div class="card-body">
-        <h2>ITIL</h2>
-        <p>
-          <strong>¿Qué es?</strong> ITIL (Information Technology Infrastructure Library) es un marco de referencia que
-          proporciona un conjunto de prácticas para la gestión de servicios de TI, con el fin de alinear los servicios
-          tecnológicos con las necesidades del negocio.
-        </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> Ayuda a las organizaciones a mejorar la calidad de sus servicios de TI,
-          optimizar recursos, reducir costos y gestionar los riesgos asociados con la tecnología. ITIL es ampliamente
-          utilizado por empresas de todo el mundo para mejorar la eficiencia operativa y la satisfacción del cliente.
-        </p>
-        <a href="https://www.axelos.com/best-practice-solutions/itil" target="_blank">Más información sobre ITIL</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <p class="mb-1 text-center">&copy; 2024 Seguridad Informática</p>
-      <p>
-        <a href="../pages/components/privacy-notice/privacy-notice.html" class="text-white d-block text-center" target="_blank">Aviso de
-          privacidad</a>
-      </p>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Normateca Digital - Seguridad Informática</title>
 
     <!-- Icono -->
-    <link rel="icon" href="/content/img/padoru.gif" type="image/x-icon" />
+    <link rel="icon" href="./content/img/padoru.gif" type="image/x-icon" />
 
     <!-- Estilos de Bootstrap -->
     <link rel="stylesheet" href="content/bootstrap/css/bootstrap.min.css" />
@@ -72,13 +72,94 @@
     <script src="content/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Barra de navegación -->
-    <div id="navbar-placeholder"></div>
-    <script src="/content/pages/components/navbar/navbar.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Normateca digital</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./content/pages/ethical-aspects.html"
+                >Aspectos eticos</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Normativas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./content/pages/rules.html#data-protection"
+                    >Ley general de protección de datos personales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./content/pages/rules.html#industrial-property"
+                    >Ley de propiedad industrial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./content/pages/rules.html#copyright"
+                    >Ley federal de derechos de autor</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./content/pages/rules.html#criminal-code"
+                    >Codigo penal federal</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./content/pages/standards.html"
+                >Estandares</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Bienvenido a Normateca Digital</h1>
-      <p>Tu fuente confiable para explorar normativas y buenas prácticas de seguridad informática.</p>
+      <div class="text-center">
+        <h1>Bienvenido a Normateca Digital</h1>
+        <h2>Aspectos Éticos y Legales del Manejo de la Información</h2>
+        <p>
+          Aquí podrás acceder a todas las normativas y estándares relacionados
+          con el manejo de la información, así como un aviso de privacidad
+          acorde a las leyes mexicanas.
+        </p>
+        <p class="lead">
+          La correcta gestión de la información conlleva responsabilidades
+          éticas y legales. A continuación, te presentamos los principales
+          marcos legales y estándares que debes considerar.
+        </p>
+      </div>
+      <img src="./content/img/grande.jpg" width="100%" />
     </section>
 
     <!-- Main Content -->
@@ -91,9 +172,14 @@
             <div class="card-body">
               <h3 class="card-title">Aspectos Éticos</h3>
               <p class="card-text">
-                Conoce las responsabilidades éticas al gestionar la información y cómo proteger los datos personales.
+                Conoce las responsabilidades éticas al gestionar la información
+                y cómo proteger los datos personales.
               </p>
-              <a href="C:\Users\mikes\Documents\Rubio\Instrumento de evaluacion I\normateca-rubio\content\pages\ethical-aspects.html" class="btn btn-primary">Leer más</a>
+              <a
+                href="./content/pages/ethical-aspects.html"
+                class="btn btn-primary"
+                >Leer más</a
+              >
             </div>
           </div>
         </div>
@@ -104,9 +190,12 @@
             <div class="card-body">
               <h3 class="card-title">Normativas</h3>
               <p class="card-text">
-                Explora las leyes y regulaciones clave que garantizan la seguridad y manejo responsable de la información.
+                Explora las leyes y regulaciones clave que garantizan la
+                seguridad y manejo responsable de la información.
               </p>
-              <a href="C:\Users\mikes\Documents\Rubio\Instrumento de evaluacion I\normateca-rubio\content\pages\rules.html" class="btn btn-primary">Ver normativas</a>
+              <a href="./content/pages/rules.html" class="btn btn-primary"
+                >Ver normativas</a
+              >
             </div>
           </div>
         </div>
@@ -117,9 +206,12 @@
             <div class="card-body">
               <h3 class="card-title">Estándares</h3>
               <p class="card-text">
-                Descubre los estándares internacionales que rigen la gestión de la seguridad informática y ciberseguridad.
+                Descubre los estándares internacionales que rigen la gestión de
+                la seguridad informática y ciberseguridad.
               </p>
-              <a href="C:\Users\mikes\Documents\Rubio\Instrumento de evaluacion I\normateca-rubio\content\pages\standards.html" class="btn btn-primary">Conocer más</a>
+              <a href="./content/pages/standards.html" class="btn btn-primary"
+                >Conocer más</a
+              >
             </div>
           </div>
         </div>
@@ -130,7 +222,12 @@
     <footer>
       <p>&copy; 2024 Normateca Digital - Seguridad Informática</p>
       <p>
-        <a href="/content/pages/privacy-notice.html" class="text-white">Aviso de privacidad</a>
+        <a
+          href="./content/pages/privacy-notice.html"
+          class="text-white d-block text-center"
+          target="_blank"
+          >Aviso de privacidad</a
+        >
       </p>
     </footer>
   </body>

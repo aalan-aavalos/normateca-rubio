@@ -13,10 +13,11 @@
 
     <!-- Estilos personalizados -->
     <style>
-      html, body {
+      html,
+      body {
         height: 100%;
         margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
 
       body {
@@ -82,8 +83,70 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Barra de navegación -->
-    <div id="navbar-placeholder"></div>
-    <script src="components/navbar/navbar.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">Normateca digital</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./ethical-aspects.html"
+                >Aspectos eticos</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Normativas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./rules.html#data-protection"
+                    >Ley general de protección de datos personales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./rules.html#industrial-property"
+                    >Ley de propiedad industrial</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./rules.html#copyright"
+                    >Ley federal de derechos de autor</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./rules.html#criminal-code"
+                    >Codigo penal federal</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./standards.html"
+                >Estandares</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container py-5">
       <h1>Aspectos Éticos y Legales del Manejo de la Información</h1>
@@ -93,16 +156,31 @@
         <div class="card-body">
           <h2>Aspectos Éticos</h2>
           <p>
-            Los aspectos éticos en el manejo de la información se refieren a los principios morales que guían el uso, almacenamiento y difusión de los datos. La ética en este contexto incluye el respeto a la privacidad, la transparencia, la integridad y la responsabilidad en el uso de la información.
+            Los aspectos éticos en el manejo de la información se refieren a los
+            principios morales que guían el uso, almacenamiento y difusión de
+            los datos. La ética en este contexto incluye el respeto a la
+            privacidad, la transparencia, la integridad y la responsabilidad en
+            el uso de la información.
           </p>
-          <p>
-            Entre los principios éticos más importantes se encuentran:
-          </p>
+          <p>Entre los principios éticos más importantes se encuentran:</p>
           <ul>
-            <li><strong>Privacidad:</strong> Respetar la confidencialidad de los datos personales y sensibles.</li>
-            <li><strong>Transparencia:</strong> Asegurar que los individuos comprendan cómo se utilizará su información.</li>
-            <li><strong>Consentimiento informado:</strong> Obtener el permiso explícito de los individuos antes de recopilar y utilizar su información.</li>
-            <li><strong>Integridad de los datos:</strong> Garantizar que los datos sean exactos y se utilicen de manera justa.</li>
+            <li>
+              <strong>Privacidad:</strong> Respetar la confidencialidad de los
+              datos personales y sensibles.
+            </li>
+            <li>
+              <strong>Transparencia:</strong> Asegurar que los individuos
+              comprendan cómo se utilizará su información.
+            </li>
+            <li>
+              <strong>Consentimiento informado:</strong> Obtener el permiso
+              explícito de los individuos antes de recopilar y utilizar su
+              información.
+            </li>
+            <li>
+              <strong>Integridad de los datos:</strong> Garantizar que los datos
+              sean exactos y se utilicen de manera justa.
+            </li>
           </ul>
         </div>
       </div>
@@ -112,19 +190,40 @@
         <div class="card-body">
           <h2>Aspectos Legales</h2>
           <p>
-            Los aspectos legales del manejo de la información están relacionados con las leyes y normativas que regulan cómo se debe tratar la información para proteger los derechos de las personas. Estas leyes incluyen la protección de datos personales, propiedad intelectual y delitos informáticos.
+            Los aspectos legales del manejo de la información están relacionados
+            con las leyes y normativas que regulan cómo se debe tratar la
+            información para proteger los derechos de las personas. Estas leyes
+            incluyen la protección de datos personales, propiedad intelectual y
+            delitos informáticos.
           </p>
           <p>
-            Algunas de las principales leyes aplicables al manejo de la información en México son:
+            Algunas de las principales leyes aplicables al manejo de la
+            información en México son:
           </p>
           <ul>
-            <li><strong>Ley General de Protección de Datos Personales:</strong> Regula el tratamiento adecuado de los datos personales y protege la privacidad de los individuos.</li>
-            <li><strong>Ley de Propiedad Industrial:</strong> Protege los derechos de propiedad intelectual e industrial, como marcas y patentes.</li>
-            <li><strong>Código Penal Federal:</strong> Define los delitos relacionados con el mal uso de la información y establece las sanciones correspondientes.</li>
-            <li><strong>Ley Federal de Derechos de Autor:</strong> Protege las obras creativas, literarias y artísticas de los autores.</li>
+            <li>
+              <strong>Ley General de Protección de Datos Personales:</strong>
+              Regula el tratamiento adecuado de los datos personales y protege
+              la privacidad de los individuos.
+            </li>
+            <li>
+              <strong>Ley de Propiedad Industrial:</strong> Protege los derechos
+              de propiedad intelectual e industrial, como marcas y patentes.
+            </li>
+            <li>
+              <strong>Código Penal Federal:</strong> Define los delitos
+              relacionados con el mal uso de la información y establece las
+              sanciones correspondientes.
+            </li>
+            <li>
+              <strong>Ley Federal de Derechos de Autor:</strong> Protege las
+              obras creativas, literarias y artísticas de los autores.
+            </li>
           </ul>
           <p>
-            Estas normativas buscan asegurar que la información se maneje de manera responsable, respetando los derechos de privacidad y propiedad de los individuos y organizaciones.
+            Estas normativas buscan asegurar que la información se maneje de
+            manera responsable, respetando los derechos de privacidad y
+            propiedad de los individuos y organizaciones.
           </p>
         </div>
       </div>
@@ -135,7 +234,12 @@
       <div class="container">
         <p class="mb-1 text-center">&copy; 2024 Seguridad Informática</p>
         <p>
-          <a href="../pages/components/privacy-notice/privacy-notice.html" class="text-white d-block text-center" target="_blank">Aviso de privacidad</a>
+          <a
+            href="./privacy-notice.html"
+            class="text-white d-block text-center"
+            target="_blank"
+            >Aviso de privacidad</a
+          >
         </p>
       </div>
     </footer>
